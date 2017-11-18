@@ -1,0 +1,208 @@
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\csc.exe
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\System.Collections.Immutable.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\System.Reflection.Metadata.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\vbc.exe
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\VBCSCompiler.exe
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\roslyn\VBCSCompiler.exe.config
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\Test.dll.config
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\Test.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\Test.pdb
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\Microsoft.Web.Infrastructure.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Helpers.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Mvc.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Razor.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Webpages.Deployment.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Webpages.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Webpages.Razor.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Razor.xml
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Webpages.xml
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Webpages.Deployment.xml
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Webpages.Razor.xml
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Helpers.xml
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\bin\System.Web.Mvc.xml
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\obj\Debug\Test.dll
+G:\无废话MVC入门教程\Listen-1\Code\Test\Test\obj\Debug\Test.pdb
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\csc.exe
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\System.Collections.Immutable.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\System.Reflection.Metadata.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\vbc.exe
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\VBCSCompiler.exe
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\roslyn\VBCSCompiler.exe.config
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\Test.dll.config
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\Test.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\Test.pdb
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\Microsoft.Web.Infrastructure.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Helpers.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Mvc.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Razor.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Webpages.Deployment.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Webpages.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Webpages.Razor.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Razor.xml
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Webpages.xml
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Webpages.Deployment.xml
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Webpages.Razor.xml
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Helpers.xml
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\bin\System.Web.Mvc.xml
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\obj\Debug\Test.dll
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\obj\Debug\Test.pdb
+G:\无废话MVC入门教程\Listen-2\Code\Test\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\csc.exe
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\System.Collections.Immutable.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\System.Reflection.Metadata.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\vbc.exe
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\VBCSCompiler.exe
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\roslyn\VBCSCompiler.exe.config
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\Test.dll.config
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\Test.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\Test.pdb
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\Microsoft.Web.Infrastructure.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Helpers.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Mvc.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Razor.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Webpages.Deployment.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Webpages.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Webpages.Razor.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Razor.xml
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Webpages.xml
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Webpages.Deployment.xml
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Webpages.Razor.xml
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Helpers.xml
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\bin\System.Web.Mvc.xml
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\obj\Debug\Test.dll
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\obj\Debug\Test.pdb
+G:\无废话MVC入门教程\Listen-3\Code\Test\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\csc.exe
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\System.Collections.Immutable.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\System.Reflection.Metadata.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\vbc.exe
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\VBCSCompiler.exe
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\roslyn\VBCSCompiler.exe.config
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Test.dll.config
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Test.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Test.pdb
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Microsoft.Web.Infrastructure.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Helpers.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Mvc.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Razor.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Webpages.Deployment.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Webpages.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Webpages.Razor.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Razor.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Webpages.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Webpages.Deployment.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Webpages.Razor.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Helpers.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\System.Web.Mvc.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\obj\Debug\Test.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\obj\Debug\Test.pdb
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Webdiyer.MvcPager.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\Webdiyer.MvcPager.xml
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\zh-CHS\Webdiyer.MvcPager.resources.dll
+G:\无废话MVC入门教程\Listen-4\Code\Test\Test\bin\zh-CHT\Webdiyer.MvcPager.resources.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\csc.exe
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\System.Collections.Immutable.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\System.Reflection.Metadata.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\vbc.exe
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\VBCSCompiler.exe
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\roslyn\VBCSCompiler.exe.config
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Test.dll.config
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Test.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Test.pdb
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Microsoft.Web.Infrastructure.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Helpers.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Mvc.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Razor.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Webpages.Deployment.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Webpages.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Webpages.Razor.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Webdiyer.MvcPager.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\Webdiyer.MvcPager.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Razor.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Webpages.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Webpages.Deployment.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Webpages.Razor.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Helpers.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\System.Web.Mvc.xml
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\zh-CHS\Webdiyer.MvcPager.resources.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\bin\zh-CHT\Webdiyer.MvcPager.resources.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\obj\Debug\Test.dll
+G:\无废话MVC入门教程\Listen-5\Code\Test\Test\obj\Debug\Test.pdb
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\csc.exe
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\vbc.exe
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\VBCSCompiler.exe
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\com.example.mvc.dll.config
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\com.example.mvc.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\com.example.mvc.pdb
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Helpers.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Mvc.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Razor.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Webpages.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Webpages.Razor.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\Webdiyer.MvcPager.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\Webdiyer.MvcPager.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Razor.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Webpages.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Webpages.Razor.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Helpers.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\System.Web.Mvc.xml
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\bin\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\obj\Debug\com.example.mvc.dll
+C:\Users\Vepser\Documents\Visual Studio 2013\Projects\com.example.mvc\Test\obj\Debug\com.example.mvc.pdb

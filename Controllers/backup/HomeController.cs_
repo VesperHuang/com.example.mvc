@@ -1,0 +1,146 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Webdiyer.WebControls.Mvc;
+using System.Web.Security;
+
+namespace com.example.mvc.Controllers
+{
+    public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Razor()
+        {
+            return View();
+        }
+
+        public ActionResult HtmlHelper()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult UserModel()
+        {
+            //爱好
+            List<SelectListItem> allHobby = new List<SelectListItem>();
+            allHobby.Add(new SelectListItem() { Value = "1", Text = "爱好1" });
+            allHobby.Add(new SelectListItem() { Value = "2", Text = "爱好2" });
+            allHobby.Add(new SelectListItem() { Value = "3", Text = "爱好3" });
+            allHobby.Add(new SelectListItem() { Value = "4", Text = "爱好4" });
+            ViewBag.Hobby = allHobby;
+            //政治面貌
+            List<SelectListItem> allPoliticalStatus = new List<SelectListItem>();
+            allPoliticalStatus.Add(new SelectListItem() { Value = "1", Text = "无" });
+            allPoliticalStatus.Add(new SelectListItem() { Value = "2", Text = "团员" });
+            allPoliticalStatus.Add(new SelectListItem() { Value = "3", Text = "党员" });
+            allPoliticalStatus.Add(new SelectListItem() { Value = "4", Text = "其他" });
+            ViewBag.PoliticalStatus = allPoliticalStatus;
+
+
+            Models.UserModel userModel = new Models.UserModel();
+            userModel.UserName = "张三";
+            userModel.Age = "22";
+            userModel.Hobby = new List<string> { "1", "2" };
+            userModel.PoliticalStatus = "3";
+            return View(userModel);
+        }
+
+        [HttpPost]
+        public void UserModel(Models.UserModel userModel)
+        {
+            if (ModelState.IsValid)
+            {
+                //逻辑处理...
+            }
+            string userName = userModel.UserName;
+            string age = userModel.Age;
+            string hobby = Request.Params["Hobby"];
+            string politicalStatus = Request.Params["PoliticalStatus"];
+
+        }
+
+        [HttpGet]
+        public void TestRouting(int year, int month, int day)
+        {
+            int Year = year;
+            int Month = month;
+            int Day = day;
+        }
+
+        [HttpGet]
+        public ActionResult TestPager(int? pageIndex)
+        {
+            int PageIndex = pageIndex ?? 1;
+            int PageSize = 2;
+            int CurrentCount = (PageIndex - 1) * PageSize;
+            int totalCount = 0;
+            PagedList<Models.EmployeeModel> listModel = Repository.Employee.GetEmployeeList("", PageSize, CurrentCount, out totalCount).ToPagedList(PageIndex, PageSize);
+            listModel.TotalItemCount = totalCount;
+            listModel.CurrentPageIndex = (int)(pageIndex ?? 1);
+            return View(listModel);
+        }
+
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Login(Models.LoginModel obj) 
+        {
+
+            //登錄邏輯 成功導回首頁 不成功導回登入頁
+            //成功紀錄使用者資料 
+
+           
+            
+
+
+            return RedirectToAction("Index");
+        }
+
+        //[HttpPost]
+        //public ActionResult Login(Models.LoginModel loginModel, string ReturnUrl = null)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        //数据库查询
+        //        bool result = Repository.Employee.Login(loginModel.LoginName, loginModel.Password);
+        //        if (result)
+        //        {
+        //            FormsAuthentication.SetAuthCookie(loginModel.LoginName, true);
+        //            if (!string.IsNullOrEmpty(ReturnUrl))
+        //            {
+        //                return Redirect(ReturnUrl);
+        //            }
+        //            else
+        //            {
+        //                return RedirectToAction("List", "Employee");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            ModelState.AddModelError("Login", "用户名或密码错误");
+        //        }
+        //    }
+        //    return View();
+        //}
+
+        [HttpGet]
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login");
+        }
+    }
+}

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>旅途歸宿</title>
+    <link rel="stylesheet" href="~/CSS/smoothness/jquery.ui.css" />
+    <link rel="stylesheet" href="~/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/CSS/style.css" />
+</head>
+
+<body>
+    <nav class="nav navbar-inverse navbar-fixed-top" style="filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <!-- img id="logo" src="IMG/logo.png" -->
+                    <span id="glyp" class="glyphicon glyphicon-tags"></span><strong>旅途歸宿</strong>
+                </a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li  class = "@ViewBag.IndexActive">
+                    <a href="../HOME/index">HOME</a>
+                </li>
+                <li class="@ViewBag.RoomActive">
+                    <a href="../HOME/room">ROOM</a>
+                </li>
+                <li class="@ViewBag.Booking_Add">
+                    <a href="../Booking/Add">BOOKING</a>
+                </li>
+                <li class="@ViewBag.PhotosActive">
+                    <a href="../HOME/photos">PHOTOS</a>
+                </li>
+                <!--<li>
+                    <a href="#">TOUR</a>
+                </li>-->
+            </ul>
+
+            <div class="navbar-form navbar-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="SEARCH ROOMS" />
+                        <div class="input-group-btn">
+                            <button class="btn btn-block"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="padding-left: 10px; margin: 0px 12px;">
+                    <a id="reg_a" href="javascript:void(0)" style="color: #D2D2D2;">REGISTER</a>
+                    <a id="member" href="javascript:void(0)" style="color: #D2D2D2;">USER</a>
+                    <span style="color: #D2D2D2;padding-left: 5px;">|</span>
+                    <a id="login_a" href="javascript:void(0)" style="color: #D2D2D2; padding-left: 5px;">LOGIN</a>
+                    <a id="logout" href="javascript:void(0)" style="color: #D2D2D2; padding-left: 5px;">LOGOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <form id="login" action="" title="會員登入">
+        <ol class="login_error"></ol>
+        <p>
+            <label for="user">帳號：</label>
+            <input type="text" name="login_user" class="text" id="login_user" />
+        </p>
+        <p>
+            <label for="pass">密碼：</label>
+            <input type="password" name="login_password" class="text" id="login_password" />
+        </p>
+        <p>
+            <input type="checkbox" name="expires" id="expires" checked="checked" /><label for="expires">登錄後有效期一週</label>
+        </p>
+    </form>
+
+    <form id="reg" action="" title="會員註冊">
+        <ol class="reg_error"></ol>
+        <p>
+            <label for="userID">帳 號：</label>
+            <input type="text" name="user_id" class="text" id="user_id" />
+        </p>
+        <p>
+            <label for="pass">密 碼：</label>
+            <input type="password" name="password" class="text" id="password" />
+        </p>
+        <p>
+            <label for="userName">姓 名：</label>
+            <input type="text" name="user_name" class="text" id="user_name" />
+        </p>
+        <p>
+            <label for="mobile">電 話：</label>
+            <input type="text" name="mobile" class="text" id="mobile" />
+        </p>
+        <p>
+            <label for="email">郵 箱：</label>
+            <input type="text" name="email" class="text" id="email" />
+        </p>
+        <p>
+            <label>性 別：</label>
+            <input type="radio" name="sex" value="male" id="male" checked><label for="male">男</label>
+            <input type="radio" name="sex" value="female" id="female"><label for="female">女</label>
+        </p>
+        <p>
+            <label for="birthday">生 日：</label>
+            <input type="text" name="birthday" readonly="readonly" class="text" id="birthday" />
+        </p>
+    </form>
+
+
+    <div id="loading">提交數據中...</div>
+    <div id="error">請登入後操作...</div>
+
+    <script src="~/JS/2.0.3/jquery.js"></script>
+    <script src="~/JS/jquery-migrate-1.2.1.js"></script>
+    <script src="~/JS/jquery.ui.js"></script>
+    <script src="~/JS/jquery.validate.js"></script>
+    <script src="~/JS/jquery.form.js"></script>
+    <script src="~/JS/jquery.cookie.js"></script>
+    <script src="~/JS/bootstrap.min.js"></script>
+    <script src="~/JS/index.js "></script>
+</body>
+</html>

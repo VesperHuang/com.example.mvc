@@ -1,0 +1,153 @@
+﻿.navbar-inverse .navbar-brand{
+    color: #fff;
+}
+.main_div{
+	/*background: rgba(86,20,19,0.35);*/
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-color: transparent; 
+	background-position: 50% 50%; 
+	background-image:url(../img/older_backgroup.png);
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	
+	display:block !important;
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	transform: translateZ(0);
+	margin-top:  50px;
+}
+
+.main_h1{	
+	font-size: 45px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	margin: 70px 0 0 0;
+}
+
+.main_h4{
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.main_content{
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+	color: #FFFFFF;
+	margin: 40px 0 0 0;
+}
+.booking{
+	/*height:800px;*/
+    background-repeat: no-repeat;
+	background-size: auto auto;
+	/*background-color: transparent;*/
+	background-color: #F7ECEC;
+	background-position: 50% 50%;
+    /*background-image: url(../img/booking.jpg);*/
+    margin-top:  50px;
+}
+.booking_title{
+	text-align: center;
+	/*color: #FFFFFF;*/
+	padding: 10px 0 0 0;
+}
+.booking_title h1{
+	color: #AC2927;
+}
+
+.booking_title h4{
+	color:#ABA6A5;
+	padding: 10px;
+}
+/* ↓ booking */
+td.lowlight{
+  color: blue;
+}
+td.warninglight{
+  color: #ff9900;
+}
+td.dangerlight{
+  color: red;
+}
+.dailyD {
+  width:55px;
+  height:46px;
+}
+.dailyC {
+  color: #FF0000;
+}
+.tdA, .tdD, .tdSat, .tdSun {
+  min-width:80px;
+  font-size:16px;
+  text-align:center;
+}
+.tdD{
+  color:#CCCCCC;
+}
+.choosedDate {
+  background-color: orange;
+}
+.choosedDaily {
+  font-weight:bold;
+  font-size:22px;
+  color:#0000EE;
+}
+#payBox1 div, #payBox2 div  {
+  line-height:120px;
+  width:140px;
+  padding:0 0 0 20px;
+}
+#payBox1 div img, #payBox2 div img {
+  vertical-align: middle;
+}
+#main-body {
+  width:1204%;
+}
+/* ↑ booking */
+
+#glyp{
+	margin-right: 10px;
+}
+/*#reg{
+	 margin-top	:100px;
+}*/
+#myCarousel {
+	margin: 50px 0 0 0;
+}
+
+.ui-widget-header {
+	background:url(../img/ui_header_bg.png);
+}
+
+.rooms_title{
+	padding: 60px 20px 20px;
+	text-align: center;	
+	color: #AC2927;
+}
+
+.room_title{
+	font-size: 20px;
+	color: #ac2927;
+}
+.room_price{
+	font-size: 14px;
+	color:#9F635B;
+}
+.room_content{
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.rooms_main{
+	background-color: #FFB26E;
+}
+
+.room_tab{
+	padding: 20px 20px;
+	text-align: left;
+}

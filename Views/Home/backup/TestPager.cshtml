@@ -1,0 +1,32 @@
+﻿@model PagedList<com.example.mvc.Models.EmploeeModel>
+@using Webdiyer.WebControls.Mvc;
+<div>
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(m => m.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Age)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Age</td>
+            </tr>
+        }
+    </table>
+</div>
+<div>
+    @Html.Pager(Model, new PagerOptions
+{
+    PageIndexParameterName = "pageIndex",
+    AutoHide = false,
+    FirstPageText = "首页",
+    PrevPageText = "上一页",
+    NextPageText = "下一页",
+    LastPageText = "尾页"
+})
+</div>

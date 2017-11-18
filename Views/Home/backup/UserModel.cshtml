@@ -1,0 +1,40 @@
+﻿@model com.example.mvc.Models.UserModel
+@{
+    Layout = null;
+}
+@using (Html.BeginForm("UserModel", "Home", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.UserName)
+    @Html.TextBoxFor(m => m.UserName)
+    <br />
+    @Html.LabelFor(m => m.Age)
+    @Html.TextBoxFor(m => m.Age)
+    <br />
+    foreach (var item in (List<SelectListItem>)ViewBag.Hobby)
+    {
+        if (Model.Hobby.Contains(item.Value))
+        {
+            <span>@item.Text</span><input name="Hobby" type="checkbox" value="@item.Value" checked="checked" />
+        }
+        else
+        {  <span>@item.Text</span><input name="Hobby" type="checkbox" value="@item.Value" />
+        }
+    }
+    <br />
+    <select name="PoliticalStatus">
+        @foreach (var item in (List<SelectListItem>)ViewBag.PoliticalStatus)
+        {
+            if (Model.PoliticalStatus == item.Value)
+            {
+                <option value="@item.Value" selected="selected">@item.Text</option>
+            }
+            else
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        }
+    </select>
+    <input type="submit" value="提交" />
+    @Html.ValidationSummary()
+}
+

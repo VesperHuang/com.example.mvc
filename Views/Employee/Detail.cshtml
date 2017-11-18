@@ -1,0 +1,17 @@
+﻿@model com.example.mvc.Models.DetailModel
+
+<div>
+    <h4>DetailModel</h4>
+    <hr />
+
+    <form>
+        <div class="form-group">
+            <p class="col-lg-2 text-right"><strong>@Html.DisplayNameFor(model => model.Name)</strong>:</p>
+            <p class="col-lg-10 text-left">@Html.DisplayFor(model => model.Name)</p>
+
+            <p class="col-lg-2 text-right"><strong>@Html.DisplayNameFor(model => model.Age)</strong>:</p>
+            <p class="col-lg-10 text-left">@Html.DisplayFor(model => model.Age)</p>
+        </div>
+    </form>
+
+

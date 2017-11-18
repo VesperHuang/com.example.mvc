@@ -1,0 +1,167 @@
+/*Fontawesome Iconfont*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/*Montserrat, Open Sans*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,300);
+
+body {
+  padding-top: 12px;
+  overflow-y: scroll;
+  font-size: 180%;
+  /*background:#FFF url("sample.jpg") no-repeat fixed;*/
+  background-size:100%;
+  background-color:#FDFDFD;
+}
+
+hr
+{
+  margin:6px;
+}
+
+.navbar-nav .subtitle {
+  padding-top:8px;
+  padding-bottom:8px;
+  line-height:16px;
+  display:block;
+  font-size:10px;
+}
+
+.navbar .divider-vertical {
+    height: 50px;
+    margin: 0 0px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+    border-right-color: #222222;
+    border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse .nav > .divider-vertical {
+        display: none;
+    }
+}
+
+.divider-vertical {
+height: 32px;
+margin: 2px 9px;
+border-right: 1px solid #ffffff;
+border-left: 1px solid #f2f2f2;
+}
+
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#MAINBOX .modalF {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    display: block;
+}
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+#myTabContent td{
+    vertical-align:middle;
+}
+
+
+td.lowlight{
+  color: blue;
+}
+td.warninglight{
+  color: #ff9900;
+}
+td.dangerlight{
+  color: red;
+}
+.dailyD {
+  width:55px;
+  height:46px;
+}
+.dailyC {
+  color: #FF0000;
+}
+.tdA, .tdD, .tdSat, .tdSun {
+  min-width:80px;
+  font-size:16px;
+  text-align:center;
+}
+.tdD{
+  color:#CCCCCC;
+}
+.choosedDate {
+  background-color: orange;
+}
+.choosedDaily {
+  font-weight:bold;
+  font-size:22px;
+  color:#0000EE;
+}
+#payBox1 div, #payBox2 div  {
+  line-height:120px;
+  width:140px;
+  padding:0 0 0 20px;
+}
+#payBox1 div img, #payBox2 div img {
+  vertical-align: middle;
+}
+#main-body {
+  width:1204%;
+}
+
+
+

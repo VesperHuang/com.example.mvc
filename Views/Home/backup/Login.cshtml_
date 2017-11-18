@@ -1,0 +1,20 @@
+﻿@model com.example.mvc.Models.LoginModel
+@{
+    //Layout = null;
+}
+<h1>员工登录</h1>
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(m => m.LoginName)
+        @Html.TextBoxFor(m => m.LoginName)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password)
+    </div>
+    <div>@Html.ValidationSummary()</div>
+    <div>
+        <input type="submit" value="登录" />
+    </div>
+}

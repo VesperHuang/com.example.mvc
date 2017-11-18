@@ -1,0 +1,28 @@
+﻿HtmlHelper示例
+<br />
+1.Html.BeginForm
+<br />
+@using (Html.BeginForm("Razor", "Home", FormMethod.Get))
+{
+    @Html.Label("LabelFor", "LabelValue");
+    <br />
+    @Html.TextBox("textbox", "textboxvalue", new { id = "textboxid", @class = "textboxclass" });
+    <br />
+    @Html.Password("password", "111111")
+    <br />
+    <span>男</span>
+    @Html.RadioButton("sex", "1", true);
+    <span>女</span>
+    @Html.RadioButton("sex", "2", false);
+    <br />
+    <span>默认方式</span>@Html.CheckBox("checkbox", true);
+    <br />
+    <span>方式一</span>
+    <input type="checkbox" value="1" name="checkbox1" checked="checked" />
+    <span>方式二</span>
+    <input type="checkbox" value="1" name="checkbox1" />
+    <span>方式三</span>
+    <input type="checkbox" value="1" name="checkbox1" />
+    <br />
+    @Html.DropDownList("dropdownList", new List<SelectListItem>() { new SelectListItem() { Value = "1", Text = "item1" }, new SelectListItem() { Value = "2", Text = "item2" } });
+}

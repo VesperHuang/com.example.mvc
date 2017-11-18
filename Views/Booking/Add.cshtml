@@ -1,0 +1,513 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>旅途歸宿</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.timepicker/0.2.6/css/bootstrap-timepicker.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" />
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="~/CSS/datepicker3.css">
+    <link rel="stylesheet" href="~/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="~/CSS/style.css">
+
+    <script src="~/JS/2.0.3/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.1/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <!-- DataTables -->
+    <script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="~/JS/bootstrap-datepicker.js"></script>
+    <script src="~/JS/bootstrap-timepicker.js"></script>
+    <script src="~/JS/validator.min.js"></script>
+    <script src="~/JS/bootstrap-waitingfor.js"></script>
+
+    <script src="~/JS/jquey.min.js"></script>
+    <script>
+        langU = "tw";
+        _ServletPath = "http://localhost:50541/Booking/";
+        hotelID = "1040";
+    </script>
+    <script src="~/JS/newbooking.js"></script>
+</head>
+
+<body>
+    <nav class="nav navbar-inverse navbar-fixed-top" style="filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <span id="glyp" class="glyphicon glyphicon-tags"></span><strong>旅途歸宿</strong>
+                </a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li class="@ViewBag.IndexActive">
+                    <a href="../HOME/index">HOME</a>
+                </li>
+                <li class="@ViewBag.RoomActive">
+                    <a href="../HOME/room">ROOM</a>
+                </li>
+                <li class="@ViewBag.Booking_Add">
+                    <a href="../Booking/Add">BOOKING</a>
+                </li>
+                <li class="@ViewBag.PhotosActive">
+                    <a href="../HOME/photos">PHOTOS</a>
+                </li>
+            </ul>
+
+            <div class="navbar-form navbar-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="SEARCH ROOMS" />
+                        <div class="input-group-btn">
+                            <button class="btn btn-block"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="padding-left: 10px; margin: 0px 12px;">
+                    <a id="reg_a" href="javascript:void(0)" style="color: #D2D2D2;">REGISTER</a>
+                    <a id="member" href="javascript:void(0)" style="color: #D2D2D2;">USER</a>
+                    <span style="color: #D2D2D2;padding-left: 5px;">|</span>
+                    <a id="login_a" href="javascript:void(0)" style="color: #D2D2D2; padding-left: 5px;">LOGIN</a>
+                    <a id="logout" href="javascript:void(0)" style="color: #D2D2D2; padding-left: 5px;">LOGOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="booking">
+        <div>
+            <div class="col-md-12 booking_title">
+                <h1><strong>BOOKING</strong></h1>
+                <h4>
+                    <p>線上訂房</p>
+                    <p><strong> xx 銀行 xx 分行 xxx 帳號 : xxxx-xxx-xxxxxx 戶名 : xxx</strong></h3></p>
+                </h4>
+            </div>
+            <!------------------------------------------------------------------------------------------------------->
+            <div class="container" style="width:740px;">
+                <div class="panel panel-default" style="position:relative;overflow:hidden;">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading" style='height:90px' id="h_name"></div>
+                    <div class="panel-body row" id="main-body">
+                        <div class="col-xs-1">
+                            <p class="text-center">請先填寫基本需求</p>
+                            <div style="width:600px" class="center-block">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="checkin" class="col-sm-3 control-label">挑選入住日期</label>
+                                        <div class="col-sm-4">
+                                            <input id="checkin" type="text" class="form-control sdatepicker" placeholder="例如:2015-01-01">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">入住人數</label>
+                                        <div class="col-sm-4">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">成人</div>
+                                                <input type="number" class="form-control" id="adult" placeholder="入住成人人數" min="0" onblur="if(isNaN(this.value)||this.value<=0) this.value=0; this.value=parseInt(this.value,10);" required>
+                                            </div>
+                                            <span class="help-block with-errors"></span>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">小孩</div>
+                                                <input type="number" class="form-control" id="child" placeholder="入住小孩人數" value="0" min="0" onblur="if(isNaN(this.value)||this.value<=0) this.value=0; this.value=parseInt(this.value,10);" required>
+                                            </div>
+                                            <span class="help-block with-errors"></span>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <blockquote class='panel-success text-success'>
+                                <dl>
+                                    <dt>請確實填寫同行人數</dt>
+                                    <dd>正確的同行人數有助於民宿或旅館提供足量的服務, 煩請確實告知。</dd>
+                                    <dt style='color:red;'>重要提醒</dt>
+                                    <dd style='color:black;'>
+                                        本系統支援多種瀏覽器chrome, firefox, safari, IE11(含)以上;<br>
+                                        <font color='red'>請勿使用IE10之前版本的瀏覽器</font>。
+                                    </dd>
+                                </dl>
+                            </blockquote>
+                            <blockquote class='panel-warning text-warning'>
+                                <dl></dl>
+                            </blockquote>
+
+                        </div>
+                        <div class="col-xs-1">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2">房型</th>
+                                                <th colspan="7">
+                                                    <nav>
+                                                        <ul class="pager" style="padding-top:0px; margin:0">
+                                                            <li class="previous">
+                                                                <a href="javascript:next7(-1);"><span aria-hidden="true">&larr;</span> 7天</a>
+                                                            </li>
+                                                            <div class="pull-left" style="margin-left:90px"> <span id="hint1" style="line-height:34px;"></span> <img id="sampleicon" style="margin-top:-6px;"> <span id="hint2" style="padding-top:6px;"></span></div>
+                                                            <li class="next">
+                                                                <a href="javascript:next7(1);">7天 <span aria-hidden="true">&rarr;</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </th>
+                                                <!--th colspan="3"><a href='javascript:next7(-1);'><span class="glyphicon glyphicon-backward" aria-hidden="true"></span> 7</a></th>
+                                                <th></th>
+                                                <th colspan="3" class="text-right"><a href='javascript:next7(1);'>7 <span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a></th-->
+                                            </tr>
+                                            <tr id="h_dateHeading"></tr>
+                                        </thead>
+                                        <tbody id="h_roomTable"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--3-->
+                        <div id="rulePanel" class="col-xs-1">
+                            <div class="panel-footer">請確實詳讀完整內容, 按下一步表示您同意此需知.</div>
+                            <p class="text-center">訂房需知</p>
+                            <div id="hotelRule">...</div>
+                        </div>
+                        <!--4-->
+                        <div id="packagesPanel" class="col-xs-1">
+                            <div class="panel-footer">如果不需要其他服務, 請直接按下一步跳過本頁.</div>
+                            <p class="text-center">除了住宿, 我們還有提供....</p>
+                            <div id="hotelPackages">...</div>
+
+                        </div>
+                        <!--5-->
+                        <div class="col-xs-1">
+                            <p class="text-center">填寫訂單相關資訊</p>
+                            <div style="width:600px" class="center-block">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="fuserName" class="col-sm-3 control-label">訂購人姓名 *</label>
+                                        <div class="col-sm-9">
+                                            <input id="fuserName" type="text" class="form-control" placeholder="your name" required>
+                                        </div>
+                                    </div>
+                                    <div id="genderBox" class="form-group">
+                                        <label for="fgender" class="col-sm-3 control-label">姓別</label>
+                                        <div class="col-sm-9">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="fgender" id="fgender1" value="M" checked> 先生
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="fgender" id="fgender2" value="F"> 小姐
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fphone" class="col-sm-3 control-label">手機 *</label>
+                                        <div class="col-sm-9">
+                                            <input id="fphone" type="text" class="form-control" placeholder="多支手機或市話可用逗號分開" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="femail" class="col-sm-3 control-label">Email *</label>
+                                        <div class="col-sm-9">
+                                            <input id="femail" type="email" class="form-control" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fcountry" class="col-sm-3 control-label">國家/地區 *</label>
+                                        <div class="col-sm-9">
+                                            <select id="fcountry" required>
+                                                <option></option>
+                                                <option value="tw" selected>台灣</option>
+                                                <option value="cn">中國</option>
+                                                <option value="sg">新加坡</option>
+                                                <option value="hk">香港</option>
+                                                <option value="my">馬來西亞</option>
+                                                <option value="jp">日本</option>
+                                                <option value="Am">美洲</option>
+                                                <option value="Eur">歐洲</option>
+                                                <option value="other">其他地區</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="farrivalDate" class="col-sm-3 control-label">預計到達時間</label>
+                                        <div class="col-sm-3">
+                                            <input id="farrivalDate" type="text" class="form-control sdatepicker" placeholder="yyyy-mm-dd">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="input-group bootstrap-timepicker col-sm-9">
+                                                <input id="timepicker1" type="text" class="form-control input-small">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="pickupBox" class="form-group">
+                                        <label for="fpickup" class="col-sm-3 control-label">是否需要接送</label>
+                                        <div class="col-sm-9">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="fpickup" id="fpickup2" value="3" onclick="$('#pickupBox2').hide('fast');" checked> 不需要
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="fpickup" id="fpickup1" value="1" onclick="$('#pickupBox2').show('fast');"><span id="pickupLabel">是的, 我需要</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div id="pickupBox2" class="form-group">
+                                        <label for="fpickupLoc" class="col-sm-3 control-label">航班 or 車次 or<br>抵達地點</label>
+                                        <div class="col-sm-9">
+                                            <input id="fpickupLoc" type="text" class="form-control" placeholder="航班 或 火車車次 或 抵達地點">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="faddress" class="col-sm-3 control-label">收件地址</label>
+                                        <div class="col-sm-9">
+                                            <input id="faddress" type="text" class="form-control" placeholder="可以收到信件的地址">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fnote" class="col-sm-3 control-label">留言</label>
+                                        <div class="col-sm-9">
+                                            <textarea id="fnote" type="text" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div id="h_bookingInfo">
+                                <form name="fbf" method="POST" target="bookingf">
+                                    <input type="hidden" name="hid">
+                                    <input type="hidden" name="tel">
+                                    <input type="hidden" name="country">
+                                    <input type="hidden" name="email">
+                                    <input type="hidden" name="address">
+                                    <input type="hidden" name="creq">
+                                    <input type="hidden" name="name">
+                                    <input type="hidden" name="rooms">
+                                    <input type="hidden" name="people">
+                                    <input type="hidden" name="tid">
+                                    <input type="hidden" name="arrivald">
+                                    <input type="hidden" name="arrivalt">
+                                    <input type="hidden" name="addbed">
+                                    <input type="hidden" name="pickup">
+                                    <input type="hidden" name="send">
+                                    <input type="hidden" name="total">
+                                    <input type="hidden" name="cki">
+                                    <input type="hidden" name="cko">
+                                    <input type="hidden" name="aid">
+                                    <input type="hidden" name="pmth">
+                                    <input type="hidden" name="lang">
+                                    <input type="hidden" name="agency" value="">
+                                    <input type="hidden" name="mpage" value="1">
+                                    <input type="hidden" name="sex" value="M">
+                                </form><iframe name="bookingf" border=0 frameborder=0 width=0 height=0></iframe>
+                            </div>
+
+                            <div class="panel-footer">填寫完成, 按下一步再次檢查訂單內容.</div>
+                        </div>
+                        <!--5-->
+                        <div class="col-xs-1">
+                            <div class="panel-footer">
+                                &gt;&gt;您尚未完成訂房, 如果內容沒有問題, 請按
+                                <font color="red"><b>下一步</b></font>選擇付訂方式.
+                            </div>
+                            <p class="text-center">訂單內容</p>
+                            <div id="orderInfoBox">
+                                <dl class="dl-horizontal">
+                                    <dt>訂購人姓名</dt>
+                                    <dd id="pre_userName"><span class='text-danger'>N/A</span></dd>
+                                    <dt>電話</dt>
+                                    <dd id="pre_phone"><span class='text-danger'>N/A</span></dd>
+                                    <dt>Email</dt>
+                                    <dd id="pre_email"><span class='text-danger'>N/A</span></dd>
+                                    <dt>國家/地區</dt>
+                                    <dd id="pre_country"><span class='text-danger'>N/A</span></dd>
+                                    <dt>同行人數</dt>
+                                    <dd id="pre_people"><span class='text-danger'>N/A</span></dd>
+                                    <dt>入住期間</dt>
+                                    <dd id="pre_checkDate"><span class='text-danger'>N/A</span></dd>
+                                    <dt>房間</dt>
+                                    <dd id="pre_rooms"><span class='text-danger'>N/A</span></dd>
+                                    <dt>加訂服務</dt>
+                                    <dd id="pre_packages"><span>-</span></dd>
+                                    <dt>金額</dt>
+                                    <dd id="pre_total"><span class='text-danger'>0</span></dd>
+                                    <dt>地址</dt>
+                                    <dd id="pre_address">-</dd>
+                                    <dt>留言</dt>
+                                    <dd id="pre_note">-</dd>
+                                    <dt id="pre_pickup_label">需要接送</dt>
+                                    <dd id="pre_pickup">不需要.</dd>
+                                    <dt>預計到達時間</dt>
+                                    <dd id="pre_arrivalTime">N/A</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--6-->
+                        <div id="payPanel" class="col-xs-1">
+                            <div class="panel-footer">
+                                <font color="red">&gt;&gt;您尚未完成訂房，選好付款方式後，<br>請確認看到付款資訊以及收到訂房確認email才算完成訂房。</font><br>若點選付款方式無反應，建議使用chrome瀏覽器重新訂房。
+                            </div>
+                            <p class="text-center">請先挑選您的付款身份,再選擇付款方式。</p>
+                            <div id="payBox1" class="row">
+                                <div class="col-xs-1 text-center">
+                                    <a href="javascript:void(0);" onclick="payKind(1)"><img id="payK1" src="~/IMG/payKind1.png"></a>
+                                </div>
+                                <div class="col-xs-1 text-center">
+                                    <a href="javascript:void(0);" onclick="payKind(2)"><img id="payK2" src="~/IMG/payKind2.png"></a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="payBox2" class="row">
+                            </div>
+
+                        </div>
+                        <!--final-->
+                        <div class="col-xs-1">
+                            <div class="panel-footer">您已完成訂房, 請按下列資訊在期限內進行付款.</div>
+                            <p class="text-center">付款方式</p>
+                            <div id="orderInfoBox">
+                                <dl class="dl-horizontal">
+                                    <dt>訂單編號</dt>
+                                    <dd id="final_ORDER_NO"></dd>
+                                    <br>
+                                    <dt>收款帳戶</dt>
+                                    <dd><span id="final_ORDER_BANK"></span>, <span id="final_ORDER_ACCOUNT"></span></dd>
+                                    <br>
+                                    <dt>應付金額</dt>
+                                    <dd id="final_ORDER_PAY"></dd>
+                                    <br>
+                                    <dt>付款期限</dt>
+                                    <dd id="final_ORDER_LIMIT"></dd>
+                                    <br>
+                                </dl>
+                            </div>
+
+                        </div>
+                        <!--final2-->
+                        <div class="col-xs-1">
+                            <div class="panel-footer">您已完成訂房, 請別忘了關注您的信箱, 檢查訂房通知信.</div>
+                            <p class="text-center">謝謝!</p>
+                        </div>
+                        <!--final3-->
+                        <div class="col-xs-1">
+                            <div class="panel-footer">
+                                請確認以下資訊，點選開始付款後
+                                <font size="5">輸入訂金金額</font>
+                            </div>
+                            <div id="orderInfo2">
+                                <dl class="dl-horizontal">
+                                    <dt>入住期間</dt>
+                                    <dd id="afp_checkDate"><span class='text-danger'>N/A</span></dd>
+                                    <dt>房間</dt>
+                                    <dd id="afp_rooms"><span class='text-danger'>N/A</span></dd>
+                                    <dt>加訂服務</dt>
+                                    <dd id="afp_packages"><span>-</span></dd>
+                                    <dt>訂單總金額</dt>
+                                    <dd id="afp_total"><span class='text-danger'>0</span></dd>
+                                    <dt>應付訂金</dt>
+                                    <dd id="afp_downpayment2"><span class='text-danger'>0</span></dd>
+                                </dl>
+                                <p>
+                                    請點選
+                                    <a class="btn btn-danger" href="#" id="goallpay" target="_blank" role="button">開始付款</a> 填入訂金 <span id="afp_downpayment"></span>
+                                </p>
+                                <div>請注意: 剩餘房費及加訂服務將於現場結清。</div>
+                                <div style="background-color:#dff0d8;">目前應收以入住最少人數計算，若有超出部分以官網公告對應價格為準，需於入住時加收。</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="langbuttons" style="position:absolute;right:10px; top:6px;">
+                        <span id="versiondiv"></span>
+                        <a href="javascript:changelang('en');"><span class="label label-default">EN</span></a>
+                        <a href="javascript:changelang('tw');"><span class="label" style="background-color:#F7BC5B;">繁中</span></a>
+                    </div>
+                    <div id="stepbuttons" style="position:absolute;right:10px; top:40px;">
+                        <button id="btnPrev" type="button" class="btn btn-default" onclick="prevStep();"><i class="fa fa-chevron-left"></i></button>
+                        <button id="btnNext" type="button" class="btn btn-default" onclick="nextStep();"><i class="fa fa-chevron-right"></i> 下一步</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="agencyModal" tabindex="-1" role="dialog" aria-labelledby="agencyModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="agencyModalLabel">通路代號</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="userAgencyCode" class="control-label">請輸入通路代號:</label>
+                                    <input type="text" class="form-control" id="userAgencyCode">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="bbcSubmitB" onclick="checkAgency()">確認</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="agencyFinishModal" tabindex="-1" role="dialog" aria-labelledby="agencyModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="agencyModalLabel">訂單成立</h4>
+                        </div>
+                        <div class="modal-body">
+                            您已完成訂房！<br> 訂單編號：
+                            <div id="bnbOrderNo">無法取得.</div>
+                            請前往email信箱查看訂房確認信<br> 訂房後, 請再與民宿主人聯繫, 完成後續付款或請款流程！<br><br> 如需取消或修改訂單, 請務必通知民宿主人.<br> 謝謝
+                            <br>
+                            <br> You made a reservation!<br> Booking ID:
+                            <div id="bnbOrderNoE">N/A.</div>
+                            Please check your email, confirm your booking details,<br> and finish the transaction based on the contract between agency and the B&amp;B owner.<br>
+                            <br> If you need to cancel or change this order, please contact the B&amp;B owner.<br> Thank you.<br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------------->
+        </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
